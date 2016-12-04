@@ -1,46 +1,25 @@
 package eu.execom.todolistgrouptwo.database.dao;
 
+import org.androidannotations.annotations.EBean;
+import org.androidannotations.rest.spring.annotations.RestService;
 
-import android.util.Log;
-
-import com.j256.ormlite.dao.Dao;
-import com.j256.ormlite.dao.RuntimeExceptionDao;
-
-import java.sql.SQLException;
-
+import eu.execom.todolistgrouptwo.api.RestApi;
 import eu.execom.todolistgrouptwo.model.User;
+import eu.execom.todolistgrouptwo.model.dto.UserRegistrationDTO;
 
-public class UserDAO extends RuntimeExceptionDao<User, Long> {
+@EBean
+public class UserDAO {
 
-    private static final String TAG = UserDAO.class.getSimpleName();
+    @RestService
+    RestApi restApi;
 
-    public UserDAO(Dao<User, Long> dao) {
-        super(dao);
-    }
-
-    public User findByUsernameAndPassword(String username, String password) {
+    public boolean create(User user) {
         try {
-            return queryBuilder().where()
-                    .eq("username", username)
-                    .and()
-                    .eq("password", password)
-                    .queryForFirst();
-        } catch (SQLException e) {
-            Log.e(TAG, e.getMessage(), e);
+            restApi.createUser(new UserRegistrationDTO(user));
+            return true;
+        } catch (Exception ex) {
+            return false;
         }
-
-        return null;
     }
 
-    public User findByUsername(String username) {
-        try {
-            return queryBuilder().where()
-                    .eq("username", username)
-                    .queryForFirst();
-        } catch (SQLException e) {
-            Log.e(TAG, e.getMessage(), e);
-        }
-
-        return null;
-    }
 }

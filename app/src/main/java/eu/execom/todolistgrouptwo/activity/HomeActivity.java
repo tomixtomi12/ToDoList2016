@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -31,10 +30,9 @@ import java.util.List;
 import eu.execom.todolistgrouptwo.R;
 import eu.execom.todolistgrouptwo.adapter.TaskAdapter;
 import eu.execom.todolistgrouptwo.api.RestApi;
-import eu.execom.todolistgrouptwo.database.wrapper.TaskDAOWrapper;
-import eu.execom.todolistgrouptwo.database.wrapper.UserDAOWrapper;
+import eu.execom.todolistgrouptwo.database.dao.TaskDAO;
+import eu.execom.todolistgrouptwo.database.dao.UserDAO;
 import eu.execom.todolistgrouptwo.model.Task;
-import eu.execom.todolistgrouptwo.model.User;
 import eu.execom.todolistgrouptwo.preference.UserPreferences_;
 
 /**
@@ -80,10 +78,10 @@ public class HomeActivity extends AppCompatActivity {
     TaskAdapter adapter;
 
     @Bean
-    UserDAOWrapper userDAOWrapper;
+    UserDAO userDAO;
 
     @Bean
-    TaskDAOWrapper taskDAOWrapper;
+    TaskDAO taskDAO;
 
     @Pref
     UserPreferences_ userPreferences;
@@ -180,7 +178,7 @@ public class HomeActivity extends AppCompatActivity {
             final Task newTask = gson.fromJson(task, Task.class);
 
             try {
-                final Task newNewTask = taskDAOWrapper.create(newTask);
+                final Task newNewTask = taskDAO.create(newTask);
                 onTaskCreated(newNewTask);
             } catch (Exception e) {
                 Log.e(TAG, e.getMessage(), e);
@@ -197,11 +195,17 @@ public class HomeActivity extends AppCompatActivity {
             final Task editedTask = gson.fromJson(task, Task.class);
             updateLocalTask(editedTask);
             updateDatabase(editedTask);
+            updateViews();
         }
     }
 
+    @UiThread
+    void updateViews() {
+        listView.invalidateViews();
+    }
+
     private void updateDatabase(Task editedTask) {
-        taskDAOWrapper.updateTask(editedTask);
+        taskDAO.updateTask(editedTask);
     }
 
     private void updateLocalTask(Task editedTask) {
@@ -210,6 +214,7 @@ public class HomeActivity extends AppCompatActivity {
                 t.setTitle(editedTask.getTitle());
                 t.setDescription(editedTask.getDescription());
                 t.setFinished(editedTask.isFinished());
+                break;
             }
         }
     }

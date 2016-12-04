@@ -71,4 +71,8 @@ public class TaskAdapter extends BaseAdapter {
     public List<Task> getItems() {
         return tasks;
     }
+
+    public void removeLastTask() {
+        tasks.remove(tasks.size() - 1);
+    }
 }

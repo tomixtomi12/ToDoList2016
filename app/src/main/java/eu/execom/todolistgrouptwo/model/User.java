@@ -1,24 +1,13 @@
 package eu.execom.todolistgrouptwo.model;
 
-import com.j256.ormlite.field.DatabaseField;
-import com.j256.ormlite.field.ForeignCollectionField;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
 public class User {
 
-    @DatabaseField(generatedId = true)
     private long id;
 
-    @DatabaseField(canBeNull = false)
     private String name;
 
-    @DatabaseField(canBeNull = false, unique = true)
     private String username;
 
-    @DatabaseField(canBeNull = false)
     private String password;
 
     public User() {

@@ -1,34 +1,27 @@
 package eu.execom.todolistgrouptwo.database.dao;
 
+
 import android.util.Log;
 
-import com.j256.ormlite.dao.Dao;
-import com.j256.ormlite.dao.RuntimeExceptionDao;
+import org.androidannotations.annotations.EBean;
+import org.androidannotations.rest.spring.annotations.RestService;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
+import eu.execom.todolistgrouptwo.api.RestApi;
 import eu.execom.todolistgrouptwo.model.Task;
-import eu.execom.todolistgrouptwo.model.User;
 
-public class TaskDAO extends RuntimeExceptionDao<Task, Long> {
+@EBean
+public class TaskDAO {
 
-    private static final String TAG = TaskDAO.class.getSimpleName();
+    @RestService
+    RestApi restApi;
 
-    public TaskDAO(Dao<Task, Long> dao) {
-        super(dao);
+    public Task create(Task task) {
+        return restApi.createTask(task);
     }
 
-    public List<Task> findByUser(User user) {
-        try {
-            return queryBuilder().where()
-                    .eq("user", user.getId())
-                    .query();
-        } catch (SQLException e) {
-            Log.e(TAG, e.getMessage(), e);
-        }
-
-        return new ArrayList<>();
+    public void updateTask(Task task) {
+        Task responseTask = restApi.updateTask(task, task.getId());
+        Log.i("Task response", responseTask.toString());
     }
+
 }

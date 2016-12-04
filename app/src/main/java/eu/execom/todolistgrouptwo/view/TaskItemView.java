@@ -40,7 +40,8 @@ public class TaskItemView extends LinearLayout {
      * @return The view.
      */
     public TaskItemView bind(Task task) {
-        title.setText(task.getTitle());
+        String titleString = task.getCheckMarkText() + task.getTitle();
+        title.setText(titleString);
         description.setText(task.getDescription());
 
         return this;

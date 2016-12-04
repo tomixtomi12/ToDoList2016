@@ -1,10 +1,8 @@
 package eu.execom.todolistgrouptwo.activity;
 
 import android.content.Intent;
-import android.support.annotation.UiThread;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.ToggleButton;
 
 import com.google.gson.Gson;
@@ -43,6 +41,7 @@ public class EditTaskActivity extends AppCompatActivity {
         isActive.setChecked(task.isFinished());
     }
 
+
     @Click
     void saveTask() {
         final Intent intent = new Intent();
@@ -54,6 +53,7 @@ public class EditTaskActivity extends AppCompatActivity {
         setResult(RESULT_OK, intent);
         finish();
     }
+
 
     private void updateTask() {
         task.setTitle(title.getText().toString());

@@ -49,9 +49,6 @@ dependencies {
     // Spring Android rest template
     compile 'org.springframework.android:spring-android-rest-template:2.0.0.M3'
 
-    // https://mvnrepository.com/artifact/com.j256.ormlite/ormlite-android
-    compile group: 'com.j256.ormlite', name: 'ormlite-android', version: '5.0'
-
     // Stetho
     compile 'com.facebook.stetho:stetho:1.4.1'
 

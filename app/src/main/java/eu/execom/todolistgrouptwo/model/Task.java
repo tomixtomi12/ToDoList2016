@@ -1,23 +1,15 @@
 package eu.execom.todolistgrouptwo.model;
 
-import com.j256.ormlite.field.DatabaseField;
-
 /**
  * Model representing a task.
  */
 public class Task {
 
-    @DatabaseField(generatedId = true)
     private long id;
 
-    @DatabaseField(canBeNull = false)
     private String title;
 
-    @DatabaseField(canBeNull = false)
     private String description;
-
-//    @DatabaseField(columnName = "user", canBeNull = false, foreign = true)
-//    private User user;
 
     private boolean finished;
 
@@ -69,5 +61,13 @@ public class Task {
                 ", description='" + description + '\'' +
                 ", finished=" + finished +
                 '}';
+    }
+
+    public String getCheckMarkText() {
+        if (finished) {
+            return "✓ ";
+        } else {
+            return "";
+        }
     }
 }

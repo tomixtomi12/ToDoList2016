@@ -20,8 +20,7 @@ import org.androidannotations.rest.spring.annotations.RestService;
 
 import eu.execom.todolistgrouptwo.R;
 import eu.execom.todolistgrouptwo.api.RestApi;
-import eu.execom.todolistgrouptwo.database.wrapper.UserDAOWrapper;
-import eu.execom.todolistgrouptwo.model.User;
+import eu.execom.todolistgrouptwo.database.dao.UserDAO;
 import eu.execom.todolistgrouptwo.model.dto.TokenContainerDTO;
 import eu.execom.todolistgrouptwo.util.NetworkingUtils;
 
@@ -35,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
             LoginActivity.class.getSimpleName();
 
     @Bean
-    UserDAOWrapper userDAOWrapper;
+    UserDAO userDAO;
 
     @ViewById
     EditText username;
@@ -57,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Background
     void tryLogin(String username, String password) {
-        //final User user = userDAOWrapper.findByUsernameAndPassword(username, password);
+        //final User user = userDAO.findByUsernameAndPassword(username, password);
 
         try {
             final TokenContainerDTO tokenContainerDTO =

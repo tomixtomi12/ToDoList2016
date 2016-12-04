@@ -3,30 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_c290f03ba1fbb17d2e140a10123318064c073957\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\org.androidannotations\ormlite-api\4.1.0\aeecadffcbcd633ffc27ca248ff2c8c057ade55a\ormlite-api-4.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="aeecadffcbcd633ffc27ca248ff2c8c057ade55a">
         <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-api-4.1.0_5d1d2efb7337f8bb8a62dfb8b2333e431d621121\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_9ec0a8e3179bf8113b8ab46ecdfa4d89528979cf\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -39,57 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-core\2.0.0.M3\c7e2c60943248bbce5de6cf552592281ed2296b\spring-android-core-2.0.0.M3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c7e2c60943248bbce5de6cf552592281ed2296b">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\spring-android-core-2.0.0.M3_ae6439d3e4f0ec45343a2510f574807bca9e3e45\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations-api\4.1.0\5f9b485312ee0ee95355d517f36890915de1bff0\androidannotations-api-4.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5f9b485312ee0ee95355d517f36890915de1bff0">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\androidannotations-api-4.1.0_20fcb3c8f68ae2a3d02af04dbd44059caf210b42\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
         <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_63705f011ba723b49f9a2a44a80260bd2f069930\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_5a00d7f9818e03be8da25b332e7de3392d368a89\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_c16e4de4c70fd130414c6dd124a96d93ab10aed2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c0128f09a7661fb40b9cf6000d18271853f40a84">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a6f7501e64e80ebbf21f2f3aa81926a61401466e\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -115,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3cbb384f1c5e9b7e6c57b69aee3d7800614914b4">
+        sha1="d2e80f692266607f0a9244f212be47268c7f9943">
         <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_98b18b0758a9db64f237ed8106fec85eac415e99\classes.dex" />
     </item>
     <item
@@ -129,30 +66,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7c5492fa023baf21734d7042856eed03a0272bcf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
         <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0b87f636d612ff142959287bf5801b4178401fd1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\commons-cli\commons-cli\1.2\2bf96b7aa8b611c177d329452af1dc933e14501c\commons-cli-1.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-cli-1.2_b1c85c3ca6f6d3ba46aa767e45060bb7f7ae748b\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,39 +102,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\5.0\3382b8260646dd334a1b9c1b3d412fcb73d8b21\ormlite-core-5.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="03382b8260646dd334a1b9c1b3d412fcb73d8b21">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-core-5.0_b491efe341d94ffe7b74558d9a930459c9850cbc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_f533b0d741355363eba42310e840759a0b22a589\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
         <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_a73a7a20390dba257e13055df83bdc6b2d9a3c14\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-rest-template\2.0.0.M3\204c594c2a47073b30d3cb14ca69ba1066c4e44c\spring-android-rest-template-2.0.0.M3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="204c594c2a47073b30d3cb14ca69ba1066c4e44c">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\spring-android-rest-template-2.0.0.M3_4f62e372be77082173af6894434558016d5eab07\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -228,30 +120,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d8a3f3a1d12fae9d9c82637d58293d0679cf0e17\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
         <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.8.0_4cc546ddf31ade885c260d45c80a37c591705caf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\5.0\1f065373aeef355dd9e2fd9854efd5ed4d54f6d\ormlite-android-5.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="01f065373aeef355dd9e2fd9854efd5ed4d54f6d">
-        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-android-5.0_c3cb8b8d3585a3aea8b3ac91c70523516cb93b3a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -270,6 +144,114 @@
         revision="25.0.0"
         sha1="ca6dd91db84a75c012bc4227b109c3b912c4be7e">
         <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\rest-spring-api-4.1.0_71df340ba05de33ab04284373dad92b62d45b980\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_c290f03ba1fbb17d2e140a10123318064c073957\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_9ec0a8e3179bf8113b8ab46ecdfa4d89528979cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-core\2.0.0.M3\c7e2c60943248bbce5de6cf552592281ed2296b\spring-android-core-2.0.0.M3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c7e2c60943248bbce5de6cf552592281ed2296b">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\spring-android-core-2.0.0.M3_ae6439d3e4f0ec45343a2510f574807bca9e3e45\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations-api\4.1.0\5f9b485312ee0ee95355d517f36890915de1bff0\androidannotations-api-4.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f9b485312ee0ee95355d517f36890915de1bff0">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\androidannotations-api-4.1.0_20fcb3c8f68ae2a3d02af04dbd44059caf210b42\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_5a00d7f9818e03be8da25b332e7de3392d368a89\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_c16e4de4c70fd130414c6dd124a96d93ab10aed2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="57a71b41a1646567398c7831c98d278f0977e183">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a6f7501e64e80ebbf21f2f3aa81926a61401466e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7c5492fa023baf21734d7042856eed03a0272bcf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\commons-cli\commons-cli\1.2\2bf96b7aa8b611c177d329452af1dc933e14501c\commons-cli-1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-cli-1.2_b1c85c3ca6f6d3ba46aa767e45060bb7f7ae748b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_f533b0d741355363eba42310e840759a0b22a589\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\tomix\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-rest-template\2.0.0.M3\204c594c2a47073b30d3cb14ca69ba1066c4e44c\spring-android-rest-template-2.0.0.M3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="204c594c2a47073b30d3cb14ca69ba1066c4e44c">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\spring-android-rest-template-2.0.0.M3_4f62e372be77082173af6894434558016d5eab07\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d8a3f3a1d12fae9d9c82637d58293d0679cf0e17\classes.dex" />
     </item>
 
 </items>

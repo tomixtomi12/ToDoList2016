@@ -2,7 +2,6 @@ package eu.execom.todolistgrouptwo.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.EditText;
 
 import org.androidannotations.annotations.Background;
@@ -16,14 +15,14 @@ import org.androidannotations.rest.spring.annotations.RestService;
 
 import eu.execom.todolistgrouptwo.R;
 import eu.execom.todolistgrouptwo.api.RestApi;
-import eu.execom.todolistgrouptwo.database.wrapper.UserDAOWrapper;
+import eu.execom.todolistgrouptwo.database.dao.UserDAO;
 import eu.execom.todolistgrouptwo.model.User;
 
 @EActivity(R.layout.activity_register)
 public class RegisterActivity extends AppCompatActivity {
 
     @Bean
-    UserDAOWrapper userDAOWrapper;
+    UserDAO userDAO;
 
     @ViewById
     EditText name;
@@ -50,7 +49,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     @Background
     void registerUser(User user) {
-        final boolean userCreated = userDAOWrapper.create(user);
+        final boolean userCreated = userDAO.create(user);
 
         if (userCreated) {
             login(user);
