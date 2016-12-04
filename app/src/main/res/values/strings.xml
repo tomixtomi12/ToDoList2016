@@ -8,4 +8,7 @@
     <string name="log_in">Log in</string>
     <string name="register">Register</string>
     <string name="name">Name</string>
+    <string name="TaskDoneToggleButtonLabel">Done</string>
+    <string name="not_finished">Not finished</string>
+    <string name="finished">Finished</string>
 </resources>

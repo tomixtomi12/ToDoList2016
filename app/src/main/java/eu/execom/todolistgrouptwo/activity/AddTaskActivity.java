@@ -11,11 +11,9 @@ import com.google.gson.Gson;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
-import org.androidannotations.annotations.sharedpreferences.Pref;
 
 import eu.execom.todolistgrouptwo.R;
 import eu.execom.todolistgrouptwo.model.Task;
-import eu.execom.todolistgrouptwo.preference.UserPreferences_;
 
 /**
  * {@link AppCompatActivity Activity} for creating a new task.

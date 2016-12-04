@@ -3,7 +3,9 @@ package eu.execom.todolistgrouptwo.api;
 import org.androidannotations.rest.spring.annotations.Body;
 import org.androidannotations.rest.spring.annotations.Get;
 import org.androidannotations.rest.spring.annotations.Header;
+import org.androidannotations.rest.spring.annotations.Path;
 import org.androidannotations.rest.spring.annotations.Post;
+import org.androidannotations.rest.spring.annotations.Put;
 import org.androidannotations.rest.spring.annotations.Rest;
 import org.springframework.http.converter.FormHttpMessageConverter;
 import org.springframework.http.converter.json.GsonHttpMessageConverter;
@@ -36,4 +38,7 @@ public interface RestApi {
 
     @Post(value = ApiConstants.REGISTER_PATH)
     User createUser(@Body UserRegistrationDTO userRegistrationDTO);
+
+    @Put(value = ApiConstants.TASK_PATH + "/{ID}")
+    Task updateTask(@Body Task task, @Path Long ID);
 }

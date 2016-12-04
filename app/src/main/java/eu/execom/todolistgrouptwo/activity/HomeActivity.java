@@ -1,10 +1,13 @@
 package eu.execom.todolistgrouptwo.activity;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -50,6 +53,7 @@ public class HomeActivity extends AppCompatActivity {
      */
     protected static final int ADD_TASK_REQUEST_CODE = 42;
     protected static final int LOGIN_REQUEST_CODE = 420; // BLAZE IT
+    protected static final int EDIT_TASK_REQUEST_CODE = 4200;
 
     /**
      * Tasks are kept in this list during a user session.
@@ -87,6 +91,7 @@ public class HomeActivity extends AppCompatActivity {
     @RestService
     RestApi restApi;
 
+
     @AfterViews
     @Background
     void checkUser() {
@@ -103,6 +108,15 @@ public class HomeActivity extends AppCompatActivity {
 
         initData();
     }
+
+
+    private void startEditTask(Task task) {
+        Intent intent = new Intent(this, EditTaskActivity_.class);
+        final Gson gson = new Gson();
+        intent.putExtra("task", gson.toJson(task));
+        startActivityForResult(intent, EDIT_TASK_REQUEST_CODE);
+    }
+
 
     /**
      * Loads tasks from the {@link android.content.SharedPreferences SharedPreferences}
@@ -130,7 +144,16 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
+
+        listView.setOnItemClickListener(new AbsListView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Task task = adapter.getItem(position);
+                startEditTask(task);
+            }
+        });
     }
+
 
     /**
      * Called when the {@link FloatingActionButton FloatingActionButton} is clicked.
@@ -140,6 +163,7 @@ public class HomeActivity extends AppCompatActivity {
         Log.i(TAG, "Add task clicked!");
         AddTaskActivity_.intent(this).startForResult(ADD_TASK_REQUEST_CODE);
     }
+
 
     /**
      * Called when the {@link AddTaskActivity AddTaskActivity} finishes.
@@ -164,11 +188,39 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
+
+    @OnActivityResult(EDIT_TASK_REQUEST_CODE)
+    @Background
+    void onTaskUpdated(int resultCode, @OnActivityResult.Extra("task") String task) {
+        if (resultCode == RESULT_OK){
+            final Gson gson = new Gson();
+            final Task editedTask = gson.fromJson(task, Task.class);
+            updateLocalTask(editedTask);
+            updateDatabase(editedTask);
+        }
+    }
+
+    private void updateDatabase(Task editedTask) {
+        taskDAOWrapper.updateTask(editedTask);
+    }
+
+    private void updateLocalTask(Task editedTask) {
+        for (Task t : adapter.getItems()) {
+            if (t.getId() == editedTask.getId()) {
+                t.setTitle(editedTask.getTitle());
+                t.setDescription(editedTask.getDescription());
+                t.setFinished(editedTask.isFinished());
+            }
+        }
+    }
+
+
     @UiThread
     void onTaskCreated(Task task) {
         tasks.add(task);
         adapter.addTask(task);
     }
+
 
     @OnActivityResult(LOGIN_REQUEST_CODE)
     void onLogin(int resultCode, @OnActivityResult.Extra("token") String token) {
@@ -177,6 +229,7 @@ public class HomeActivity extends AppCompatActivity {
             checkUser();
         }
     }
+
 
     @KeyDown(KeyEvent.KEYCODE_BACK)
     void logout() {

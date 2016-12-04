@@ -1,6 +1,8 @@
 package eu.execom.todolistgrouptwo.database.wrapper;
 
 
+import android.util.Log;
+
 import org.androidannotations.annotations.EBean;
 import org.androidannotations.ormlite.annotations.OrmLiteDao;
 import org.androidannotations.rest.spring.annotations.RestService;
@@ -27,8 +29,12 @@ public class TaskDAOWrapper {
     }
 
     public Task create(Task task) {
-//        taskDAO.create(task);
         return restApi.createTask(task);
+    }
+
+    public void updateTask(Task task) {
+        Task responseTask = restApi.updateTask(task, task.getId());
+        Log.i("Task response", responseTask.toString());
     }
 
 }

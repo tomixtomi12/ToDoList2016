@@ -67,4 +67,8 @@ public class TaskAdapter extends BaseAdapter {
         tasks.add(task);
         notifyDataSetChanged();
     }
+
+    public List<Task> getItems() {
+        return tasks;
+    }
 }

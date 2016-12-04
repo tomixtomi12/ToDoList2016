@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="d4eb81af37dc4d4b2ac70f105c2d07cff79d4707">
+        sha1="c0128f09a7661fb40b9cf6000d18271853f40a84">
         <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a6f7501e64e80ebbf21f2f3aa81926a61401466e\classes.dex" />
     </item>
     <item
@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4a8ad696a99970d7a694624344328b3082a526c2">
+        sha1="3cbb384f1c5e9b7e6c57b69aee3d7800614914b4">
         <dex dex="E:\Users\tomix\AndroidStudioProjects\ToDoList2016\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_98b18b0758a9db64f237ed8106fec85eac415e99\classes.dex" />
     </item>
     <item
